@@ -1,0 +1,96 @@
+[
+  {
+    "id": "python",
+    "name": "Python",
+    "startDate": "2021-06-01",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Python-logo-notext.svg/1200px-Python-logo-notext.svg.png",
+    "description": "My primary language for backend development, scripting, and cybersecurity tasks. Proficient in creating automation scripts, web scrapers, and network analysis tools.",
+    "projects": [
+      "Developed a port scanner with service detection.",
+      "Created a web scraping tool for threat intelligence gathering.",
+      "Built several REST APIs using Flask and FastAPI."
+    ],
+    "resources": [
+      { "name": "Official Python Docs", "url": "https://docs.python.org/3/" },
+      { "name": "Real Python", "url": "https://realpython.com/" }
+    ]
+  },
+  {
+    "id": "javascript",
+    "name": "JavaScript",
+    "startDate": "2022-01-15",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/JavaScript-logo.png/800px-JavaScript-logo.png",
+    "description": "Used extensively for frontend interactivity and dynamic web applications. Comfortable with modern ES6+ features, asynchronous operations, and DOM manipulation.",
+    "projects": [
+      "Built this interactive portfolio website from scratch.",
+      "Developed the frontend for a real-time chat application.",
+      "Created several browser-based tools and games."
+    ],
+    "resources": [
+        { "name": "MDN Web Docs", "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript" },
+        { "name": "JavaScript.info", "url": "https://javascript.info/" }
+    ]
+  },
+  {
+    "id": "cybersecurity",
+    "name": "Cyber Security",
+    "startDate": "2020-09-01",
+    "imageUrl": "",
+    "description": "A deep passion and the core of my focus. Experienced in network security principles, ethical hacking techniques, and vulnerability assessment. Constantly learning about new threats and defense mechanisms.",
+    "projects": [
+      "Participated in several Capture The Flag (CTF) competitions.",
+      "Conducted vulnerability scans on local networks.",
+      "Authored security reports and documentation for personal projects."
+    ],
+    "resources": [
+      { "name": "Hack The Box", "url": "https://www.hackthebox.com/" },
+      { "name": "OWASP Top Ten", "url": "https://owasp.org/www-project-top-ten/" }
+    ]
+  },
+  {
+    "id": "networking",
+    "name": "Networking",
+    "startDate": "2021-02-10",
+    "imageUrl": "",
+    "description": "Solid understanding of TCP/IP, DNS, HTTP/S, and other core internet protocols. Capable of analyzing network traffic with tools like Wireshark and configuring basic network devices.",
+    "projects": [
+      "Set up and managed a home lab network.",
+      "Analyzed packet captures to troubleshoot application issues.",
+      "Wrote scripts to automate network discovery."
+    ],
+    "resources": [
+      { "name": "Wireshark University", "url": "https://www.wireshark.org/docs/" }
+    ]
+  },
+  {
+    "id": "linux",
+    "name": "Linux",
+    "startDate": "2020-11-20",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/35/Tux.svg/1200px-Tux.svg.png",
+    "description": "My daily driver OS. Proficient with the command line, shell scripting (Bash), system administration, and managing services on Debian-based distributions.",
+    "projects": [
+      "Configured and hardened a personal web server.",
+      "Automated system backups and updates with cron jobs.",
+      "Customized my desktop environment (i3/Sway) for maximum productivity."
+    ],
+    "resources": [
+      { "name": "The Linux Command Line (Book)", "url": "http://linuxcommand.org/tlcl.php" },
+      { "name": "ArchWiki", "url": "https://wiki.archlinux.org/" }
+    ]
+  },
+  {
+    "id": "git",
+    "name": "Git & GitHub",
+    "startDate": "2021-07-01",
+    "imageUrl": "https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png",
+    "description": "Experienced in version control using Git for all my projects. Comfortable with branching, merging, pull requests, and collaborating via GitHub.",
+    "projects": [
+      "Manage all personal projects, including this website, on GitHub.",
+      "Contributed to open-source projects.",
+      "Utilized GitHub Actions for basic CI/CD."
+    ],
+    "resources": [
+      { "name": "Pro Git (Book)", "url": "https://git-scm.com/book/en/v2" }
+    ]
+  }
+]
