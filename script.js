@@ -36,7 +36,7 @@
     "title": "Cyber Security Enthusiast & Full-Stack Developer",
     "location": "Durgapur, West Bengal, India",
     "profilePicture": "https://via.placeholder.com/300x300/0a0f14/00f5d4?text=RG",
-    "about": "Passionate cybersecurity enthusiast with a strong foundation in full-stack development.",
+    "about": "Passionate cybersecurity enthusiast with a strong foundation in full-stack development. (ERROR - THIS IS DUMMY TEXTS)",
     "cvUrl": "./assets/Rupam_Ghosh_CV.pdf",
     "socialLinks": [
       { "platform": "github", "url": "https://github.com/rupamghosh", "username": "rupamghosh" },
@@ -292,19 +292,43 @@
       });
     }
 
-    // social links container
-    const social = $id('social-links');
-    if (social) {
-      social.innerHTML = '';
-      (user.socialLinks || []).forEach(link => {
-        const a = el('a', { href: link.url || '#', target: '_blank', rel: 'noopener noreferrer', title: link.platform || link.username || '' },
-          el('span', { class: 'sr-only' }, `${link.platform || ''}: ${link.username || ''}`),
-          // visible label - use platform or username
-          el('div', { class: 'px-3 py-2 rounded-md bg-accent bg-opacity-10 text-accent text-sm font-medium' }, link.platform || link.username || link.url)
-        );
-        social.append(a);
-      });
-    }
+   // social links container
+const social = $id('social-links');
+if (social) {
+  social.innerHTML = ''; // clear existing content to avoid duplicates
+
+  const iconMap = {
+    github: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="w-5 h-5" fill="currentColor"><path d="M12 .5C5.648.5.5 5.648.5 12c0 5.086 3.292 9.389 7.86 10.912.575.105.785-.25.785-.556v-2.041c-3.197.695-3.87-1.37-3.87-1.37-.523-1.327-1.277-1.68-1.277-1.68-1.043-.714.08-.699.08-.699 1.152.081 1.758 1.184 1.758 1.184 1.025 1.756 2.688 1.249 3.342.954.103-.741.401-1.25.73-1.538-2.553-.29-5.238-1.276-5.238-5.675 0-1.254.448-2.277 1.183-3.079-.119-.291-.513-1.459.112-3.041 0 0 .964-.309 3.16 1.176a10.98 10.98 0 012.878-.387c.977.005 1.962.132 2.878.387 2.197-1.485 3.16-1.176 3.16-1.176.625 1.582.231 2.75.113 3.041.737.802 1.183 1.825 1.183 3.079 0 4.409-2.69 5.381-5.253 5.665.412.356.79 1.056.79 2.133v3.163c0 .31.209.667.793.555C20.713 21.388 24 17.086 24 12 24 5.648 18.352.5 12 .5z"/></svg>`,
+    linkedin: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="w-5 h-5" fill="currentColor"><path d="M19 0h-14c-2.762 0-5 2.238-5 5v14c0 2.762 2.238 5 5 5h14c2.762 0 5-2.238 5-5v-14c0-2.762-2.238-5-5-5zm-11 19h-3v-10h3v10zm-1.5-11.269c-.966 0-1.75-.784-1.75-1.75s.784-1.75 1.75-1.75c.966 0 1.75.784 1.75 1.75s-.784 1.75-1.75 1.75zm13.5 11.269h-3v-5.5c0-1.379-.028-3.155-1.922-3.155-1.925 0-2.218 1.504-2.218 3.055v5.6h-3v-10h2.879v1.367h.041c.401-.759 1.379-1.559 2.841-1.559 3.039 0 3.599 2.001 3.599 4.6v5.592z"/></svg>`,
+    twitter: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="w-5 h-5" fill="currentColor"><path d="M24 4.557a9.82 9.82 0 01-2.828.775 4.936 4.936 0 002.165-2.724 9.875 9.875 0 01-3.127 1.195A4.924 4.924 0 0016.616 3c-2.732 0-4.949 2.217-4.949 4.949 0 .387.044.764.128 1.125-4.11-.207-7.758-2.175-10.2-5.165a4.934 4.934 0 00-.67 2.486c0 1.715.873 3.23 2.2 4.122a4.909 4.909 0 01-2.24-.618v.063c0 2.396 1.705 4.395 3.966 4.85a4.936 4.936 0 01-2.233.085c.63 1.968 2.445 3.4 4.6 3.442A9.87 9.87 0 010 19.54a13.933 13.933 0 007.548 2.212c9.056 0 14.01-7.506 14.01-14.01 0-.213-.005-.425-.014-.636A10.025 10.025 0 0024 4.557z"/></svg>`,
+    email: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="w-5 h-5" fill="currentColor"><path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>`,
+    phone: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="w-5 h-5" fill="currentColor"><path d="M6.6 10.8c1.8 3.5 4.7 6.4 8.2 8.2l2.6-2.6c.3-.3.8-.4 1.2-.2 1.3.5 2.8.8 4.3.8.6 0 1 .4 1 1v3.5c0 .6-.4 1-1 1C10.9 20 4 13.1 4 4.6 4 4 4.4 3.6 5 3.6H8.5c.6 0 1 .4 1 1 0 1.6.3 3 .8 4.3.2.4.1.9-.2 1.2L6.6 10.8z"/></svg>`,
+    website: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="w-5 h-5" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm5 13h-3v3h-4v-3H7v-4h3V8h4v3h3v4z"/></svg>`,
+    default: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="w-5 h-5" fill="currentColor"><circle cx="12" cy="12" r="10"/></svg>`
+  };
+
+  (user.socialLinks || []).forEach(link => {
+    const key = (link.platform || '').toLowerCase();
+    const iconSvg = iconMap[key] || iconMap.default;
+
+    const a = el('a', {
+      href: link.url || '#',
+      target: '_blank',
+      rel: 'noopener noreferrer',
+      title: `${link.platform || ''} • ${link.username || ''}`,
+      'aria-label': `${link.platform || ''} • ${link.username || ''}`,
+      class: 'flex items-center gap-2 px-3 py-2 rounded-md bg-accent bg-opacity-10 text-accent text-sm font-medium hover:bg-accent hover:text-white transition-colors'
+    },
+      el('span', { class: 'inline-block', html: iconSvg }),
+      // username visible on sm+ screens
+      el('span', { class: 'hidden sm:inline-block' }, link.username || link.platform || '')
+    );
+
+    social.append(a);
+  });
+}
+
+
 
     // footer name
     if ($id('footer-name')) $id('footer-name').textContent = user.name || '—';

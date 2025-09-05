@@ -3,28 +3,28 @@
   "nickname": "hulo",
   "title": "Cyber Security Enthusiast & Full-Stack Developer",
   "location": "Durgapur, West Bengal, India",
-  "profilePicture": "https://via.placeholder.com/300x300/0a0f14/00f5d4?text=RG",
+  "profilePicture": "/pfp.jpg",
   "about": "Passionate cybersecurity enthusiast with a strong foundation in full-stack development. I thrive on identifying vulnerabilities, securing systems, and building robust applications. My journey in tech spans across multiple domains - from ethical hacking and penetration testing to creating scalable web solutions. I believe in continuous learning and sharing knowledge with the community. When I'm not diving deep into security research or coding, you'll find me participating in CTF competitions or contributing to open-source projects.",
   "cvUrl": "./assets/Rupam_Ghosh_CV.pdf",
   "socialLinks": [
     {
       "platform": "github",
-      "url": "https://github.com/rupamghosh",
-      "username": "rupamghosh"
+      "url": "https://github.com/hul0",
+      "username": "hul0"
     },
     {
       "platform": "linkedin", 
-      "url": "https://linkedin.com/in/rupamghosh",
-      "username": "rupamghosh"
+      "url": "https://linkedin.com/in/hulo",
+      "username": "hulo"
     },
     {
       "platform": "twitter",
-      "url": "https://twitter.com/rupamghosh",
-      "username": "@rupamghosh"
+      "url": "https://twitter.com/hulo",
+      "username": "@hulo"
     },
     {
       "platform": "email",
-      "url": "mailto:rupam@example.com",
+      "url": "mailto:hulo@hulobiral.online",
       "username": "rupam@example.com"
     },
     {
