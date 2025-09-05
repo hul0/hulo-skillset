@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Rupam Ghosh (hulo) - Skills</title>
+    <title>Rupam Ghosh (hulo) - Skills Portfolio</title>
     <meta
       name="description"
       content="The technology skill portfolio of Rupam Ghosh, showcasing expertise in cybersecurity, development, and more."
@@ -16,166 +16,85 @@
       href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&display=swap"
       rel="stylesheet"
     />
-
-    <!-- Embedded CSS -->
-    <style>
-      :root {
-        --bg-primary: #05080a;
-        --bg-secondary: #0a0f14;
-        --border-color: #1a222c;
-        --text-primary: #e6f1ff;
-        --text-secondary: #8a99b0;
-        --accent: #00f5d4;
-        --accent-glow: rgba(0, 245, 212, 0.2);
-      }
-
-      html {
-        cursor: url("data:image/svg+xml,%3Csvg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M12 4V20M4 12H20' stroke='%2300f5d4' stroke-width='2'/%3E%3C/svg%3E")
-            12 12,
-          auto;
-      }
-
-      button,
-      a {
-        cursor: url("data:image/svg+xml,%3Csvg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M12 4V20M4 12H20' stroke='%2300f5d4' stroke-width='2'/%3E%3Ccircle cx='12' cy='12' r='3' fill='%2300f5d4'/%3E%3C/svg%3E")
-            12 12,
-          pointer;
-      }
-
-      body {
-        background-color: var(--bg-primary);
-        color: var(--text-primary);
-        font-family: "JetBrains Mono", monospace;
-        background-image: radial-gradient(
-          var(--border-color) 1px,
-          transparent 1px
-        );
-        background-size: 20px 20px;
-      }
-
-      .holographic-glow {
-        box-shadow: 0 0 15px var(--accent-glow), 0 0 30px var(--accent-glow);
-      }
-
-      .skill-card {
-        background-color: rgba(10, 15, 20, 0.8);
-        backdrop-filter: blur(10px);
-        -webkit-backdrop-filter: blur(10px);
-        border: 1px solid var(--border-color);
-        transition: transform 0.3s ease, box-shadow 0.3s ease,
-          border-color 0.3s ease;
-      }
-
-      .skill-card:hover {
-        transform: translateY(-5px) scale(1.02);
-        border-color: var(--accent);
-        box-shadow: 0 0 20px var(--accent-glow);
-      }
-
-      .rating-bar-bg {
-        background-color: var(--border-color);
-      }
-      .rating-bar-fill {
-        background-color: var(--accent);
-        box-shadow: 0 0 10px var(--accent);
-        transition: width 1s ease-in-out;
-      }
-
-      /* Modal Styles */
-      #skill-modal {
-        background-color: rgba(5, 8, 10, 0.8);
-        backdrop-filter: blur(15px);
-        -webkit-backdrop-filter: blur(15px);
-      }
-
-      #modal-content {
-        background-color: var(--bg-secondary);
-        border: 1px solid var(--accent);
-      }
-
-      .fade-in {
-        animation: fadeIn 0.3s ease-out forwards;
-      }
-      .fade-out {
-        animation: fadeOut 0.3s ease-in forwards;
-      }
-      .slide-up-in {
-        animation: slideUpIn 0.4s ease-out forwards;
-      }
-      .slide-down-out {
-        animation: slideDownOut 0.4s ease-in forwards;
-      }
-
-      @keyframes fadeIn {
-        from {
-          opacity: 0;
-        }
-        to {
-          opacity: 1;
-        }
-      }
-      @keyframes fadeOut {
-        from {
-          opacity: 1;
-        }
-        to {
-          opacity: 0;
-        }
-      }
-      @keyframes slideUpIn {
-        from {
-          opacity: 0;
-          transform: translateY(30px) scale(0.98);
-        }
-        to {
-          opacity: 1;
-          transform: translateY(0) scale(1);
-        }
-      }
-      @keyframes slideDownOut {
-        from {
-          opacity: 1;
-          transform: translateY(0) scale(1);
-        }
-        to {
-          opacity: 0;
-          transform: translateY(30px) scale(0.98);
-        }
-      }
-
-      ::-webkit-scrollbar {
-        width: 8px;
-      }
-      ::-webkit-scrollbar-track {
-        background: var(--bg-secondary);
-      }
-      ::-webkit-scrollbar-thumb {
-        background: var(--accent);
-        border-radius: 4px;
-      }
-      ::-webkit-scrollbar-thumb:hover {
-        background: #00c4a8;
-      }
-    </style>
+    
+    <!-- Custom Styles -->
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body class="min-h-screen p-4 sm:p-8">
     <div class="max-w-7xl mx-auto">
-      <!-- Header -->
+      <!-- Header with Profile -->
       <header class="text-center mb-12">
-        <h1 class="text-4xl sm:text-5xl font-bold text-white">
-          Rupam Ghosh // <span class="text-accent">Skill Matrix</span>
+        <!-- Profile Picture -->
+        <div class="mb-6">
+          <div class="relative inline-block">
+            <img 
+              id="profile-picture" 
+              src="" 
+              alt="Profile Picture" 
+              class="w-32 h-32 sm:w-40 sm:h-40 rounded-full mx-auto border-4 border-accent holographic-glow object-cover"
+            />
+            <div class="absolute -bottom-2 -right-2 w-8 h-8 bg-accent rounded-full flex items-center justify-center">
+              <span class="text-bg-primary text-xs font-bold">✓</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Name and Title -->
+        <h1 class="text-4xl sm:text-5xl font-bold text-white mb-2">
+          <span id="user-name">Loading...</span> // <span class="text-accent">Portfolio</span>
         </h1>
-        <p class="text-sm text-text-secondary mt-2">
-          Designation: Cyber Security Enthusiast & Developer
-        </p>
+        <p class="text-lg text-accent mb-2" id="user-title">Loading...</p>
+        <p class="text-sm text-text-secondary mb-6" id="user-location">Loading...</p>
+
+        <!-- Action Buttons -->
+        <div class="flex flex-col sm:flex-row gap-4 justify-center items-center mb-8">
+          <button id="download-cv-btn" class="action-btn">
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" 
+                d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z">
+              </path>
+            </svg>
+            Download CV
+          </button>
+          <div class="flex gap-3" id="social-links">
+            <!-- Social links will be dynamically added -->
+          </div>
+        </div>
+
+        <!-- About Section -->
+        <div class="max-w-3xl mx-auto mb-8 text-left">
+          <div class="bg-secondary-glass p-6 rounded-lg border border-border-color">
+            <h2 class="text-xl font-bold text-accent mb-4 text-center">About Me</h2>
+            <p class="text-text-secondary leading-relaxed" id="user-about">Loading...</p>
+          </div>
+        </div>
+
+        <!-- Stats Bar -->
+        <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 mb-8">
+          <div class="stat-card">
+            <div class="text-2xl font-bold text-accent" id="total-skills">0</div>
+            <div class="text-sm text-text-secondary">Total Skills</div>
+          </div>
+          <div class="stat-card">
+            <div class="text-2xl font-bold text-accent" id="total-categories">0</div>
+            <div class="text-sm text-text-secondary">Categories</div>
+          </div>
+          <div class="stat-card">
+            <div class="text-2xl font-bold text-accent" id="experience-years">0+</div>
+            <div class="text-sm text-text-secondary">Years Experience</div>
+          </div>
+        </div>
+
+        <!-- Help Text -->
+        <div class="bg-accent bg-opacity-10 border border-accent rounded-lg p-4 mb-8">
+          <p class="text-accent text-sm">
+            <span class="font-bold">💡 Tip:</span> Click on any skill card below to explore detailed information, projects, and resources!
+          </p>
+        </div>
       </header>
 
-      <!-- Skill Grid -->
-      <main
-        id="skill-grid"
-        class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6"
-      >
-        <!-- Skills will be dynamically injected here -->
+      <!-- Skills Categories -->
+      <main id="skills-main">
         <div id="loader" class="col-span-full text-center py-16">
           <p class="text-accent animate-pulse">
             Initializing skill matrix... Accessing data nodes...
@@ -185,10 +104,16 @@
 
       <!-- Footer -->
       <footer class="text-center mt-16 text-xs text-text-secondary">
-        <p>
-          &copy; <span id="copyright-year"></span> Rupam Ghosh (hulo). All data
-          loaded from static JSON database.
-        </p>
+        <div class="border-t border-border-color pt-6">
+          <p class="mb-2">
+            &copy; <span id="copyright-year"></span> <span id="footer-name">Rupam Ghosh (hulo)</span>. 
+            All data loaded from static JSON database.
+          </p>
+          <p class="text-xs opacity-75">
+            Website enhanced with ❤️ using <span class="text-accent">Gemini</span> and <span class="text-accent">Claude AI</span>. 
+            Always credit the coder, even if it's AI! 🤖
+          </p>
+        </div>
       </footer>
     </div>
 
@@ -207,7 +132,10 @@
         >
           <div class="flex items-center space-x-4">
             <img id="modal-img" src="" alt="Skill Icon" class="w-10 h-10" />
-            <h2 id="modal-title" class="text-2xl font-bold text-white"></h2>
+            <div>
+              <h2 id="modal-title" class="text-2xl font-bold text-white"></h2>
+              <p id="modal-category" class="text-sm text-accent"></p>
+            </div>
           </div>
           <button
             id="close-modal-btn"
@@ -242,6 +170,7 @@
                   class="rating-bar-fill h-full rounded-full"
                 ></div>
               </div>
+              <p class="text-xs text-text-secondary mt-1" id="modal-rating-text"></p>
             </div>
             <div>
               <h3 class="font-bold text-accent mb-2">Experience Since</h3>
@@ -273,212 +202,7 @@
       </div>
     </div>
 
-    <!-- Embedded JavaScript -->
-    <script>
-      (async function () {
-        "use strict";
-
-        // --- DOM ELEMENTS ---
-        const skillGrid = document.getElementById("skill-grid");
-        const loader = document.getElementById("loader");
-        const modal = document.getElementById("skill-modal");
-        const modalBackdrop = document.getElementById("modal-backdrop");
-        const closeModalBtn = document.getElementById("close-modal-btn");
-        const copyrightYear = document.getElementById("copyright-year");
-
-        copyrightYear.textContent = new Date().getFullYear();
-
-        // --- CORE LOGIC ---
-
-        async function fetchData(url) {
-          const response = await fetch(url);
-          if (!response.ok)
-            throw new Error(
-              `HTTP error! status: ${response.status} for ${url}`
-            );
-          return response.json();
-        }
-
-        function createPlaceholderSvg(name) {
-          const initials = name.substring(0, 2).toUpperCase();
-          const svg = `
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" class="w-12 h-12">
-                    <rect width="100" height="100" rx="15" fill="#0a0f14"/>
-                    <text x="50" y="50" font-family="JetBrains Mono, monospace" font-size="40" fill="#00f5d4" text-anchor="middle" dy=".3em">${initials}</text>
-                    <rect width="100" height="100" rx="15" fill="none" stroke="#1a222c" stroke-width="2"/>
-                </svg>`;
-          return `data:image/svg+xml;base64,${btoa(svg)}`;
-        }
-
-        function renderSkillCard(skill) {
-          const card = document.createElement("button");
-          card.className = "skill-card text-left p-5 rounded-lg flex flex-col";
-          card.dataset.skillId = skill.id;
-
-          const ratingPercentage = (skill.rating / 10) * 100;
-          const experienceDate = new Date(skill.startDate).toLocaleDateString(
-            "en-US",
-            { year: "numeric", month: "short" }
-          );
-
-          card.innerHTML = `
-                <div class="flex items-center space-x-4 mb-4">
-                    <img src="${
-                      skill.imageUrl || createPlaceholderSvg(skill.name)
-                    }" alt="${
-            skill.name
-          } icon" class="w-12 h-12 rounded-md object-cover flex-shrink-0">
-                    <div>
-                        <h3 class="text-xl font-bold text-white">${
-                          skill.name
-                        }</h3>
-                        <p class="text-xs text-text-secondary">Experience since ${experienceDate}</p>
-                    </div>
-                </div>
-                <div class="mt-auto">
-                    <p class="text-xs text-accent mb-1">Proficiency: ${
-                      skill.rating
-                    }/10</p>
-                    <div class="rating-bar-bg w-full h-2 rounded-full">
-                        <div class="rating-bar-fill h-full rounded-full" style="width: 0%;" data-rating="${ratingPercentage}"></div>
-                    </div>
-                </div>
-            `;
-          skillGrid.appendChild(card);
-        }
-
-        function populateModal(skill) {
-          document.getElementById("modal-title").textContent = skill.name;
-          document.getElementById("modal-description").textContent =
-            skill.description;
-          document.getElementById("modal-img").src =
-            skill.imageUrl || createPlaceholderSvg(skill.name);
-
-          const startDate = new Date(skill.startDate);
-          const today = new Date();
-          const years = today.getFullYear() - startDate.getFullYear();
-          const months = today.getMonth() - startDate.getMonth();
-          const totalMonths = years * 12 + months;
-          const displayYears = Math.floor(totalMonths / 12);
-          const displayMonths = totalMonths % 12;
-          document.getElementById(
-            "modal-start-date"
-          ).textContent = `${startDate.toLocaleDateString("en-GB", {
-            day: "2-digit",
-            month: "short",
-            year: "numeric",
-          })} (~${displayYears}y ${displayMonths}m)`;
-
-          const ratingPercentage = (skill.rating / 10) * 100;
-          document.getElementById(
-            "modal-rating-bar"
-          ).style.width = `${ratingPercentage}%`;
-
-          const projectsList = document.getElementById("modal-projects");
-          projectsList.innerHTML =
-            skill.projects.map((p) => `<li>${p}</li>`).join("") ||
-            "<li>No specific projects listed yet.</li>";
-
-          const resourcesList = document.getElementById("modal-resources");
-          resourcesList.innerHTML =
-            skill.resources
-              .map(
-                (r) => `
-                <li>
-                    <a href="${r.url}" target="_blank" rel="noopener noreferrer" class="flex items-center space-x-3 text-text-secondary hover:text-accent transition-colors">
-                        <svg class="w-4 h-4 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20"><path d="M11 3a1 1 0 100 2h2.586l-6.293 6.293a1 1 0 001.414 1.414L15 6.414V9a1 1 0 102 0V4a1 1 0 00-1-1h-5z"></path><path d="M5 5a2 2 0 00-2 2v8a2 2 0 002 2h8a2 2 0 002-2v-3a1 1 0 10-2 0v3H5V7h3a1 1 0 000-2H5z"></path></svg>
-                        <span>${r.name}</span>
-                    </a>
-                </li>`
-              )
-              .join("") || "<li>No resources listed yet.</li>";
-        }
-
-        function showModal(skill) {
-          populateModal(skill);
-          modal.classList.remove("hidden");
-          modal.classList.remove("fade-out");
-          modal.classList.add("fade-in");
-          document
-            .getElementById("modal-content")
-            .classList.remove("slide-down-out");
-          document.getElementById("modal-content").classList.add("slide-up-in");
-          document.body.style.overflow = "hidden";
-        }
-
-        function hideModal() {
-          modal.classList.remove("fade-in");
-          modal.classList.add("fade-out");
-          document
-            .getElementById("modal-content")
-            .classList.remove("slide-up-in");
-          document
-            .getElementById("modal-content")
-            .classList.add("slide-down-out");
-          setTimeout(() => {
-            modal.classList.add("hidden");
-            document.body.style.overflow = "";
-          }, 400);
-        }
-
-        // --- INITIALIZATION ---
-        try {
-          const [skillsData, ratingsData] = await Promise.all([
-            fetchData("./skills.json"),
-            fetchData("./ratings.json"),
-          ]);
-
-          const skills = skillsData.map((skill) => ({
-            ...skill,
-            rating: ratingsData[skill.id] || 0,
-          }));
-
-          loader.remove();
-          skills.forEach(renderSkillCard);
-
-          // Animate rating bars on scroll into view
-          const observer = new IntersectionObserver(
-            (entries) => {
-              entries.forEach((entry) => {
-                if (entry.isIntersecting) {
-                  const bar = entry.target.querySelector(".rating-bar-fill");
-                  if (bar) {
-                    bar.style.width = `${bar.dataset.rating}%`;
-                    observer.unobserve(entry.target);
-                  }
-                }
-              });
-            },
-            { threshold: 0.5 }
-          );
-
-          document
-            .querySelectorAll(".skill-card")
-            .forEach((card) => observer.observe(card));
-
-          // Setup modal event listeners
-          skillGrid.addEventListener("click", (e) => {
-            const card = e.target.closest(".skill-card");
-            if (card) {
-              const skillId = card.dataset.skillId;
-              const selectedSkill = skills.find((s) => s.id === skillId);
-              if (selectedSkill) showModal(selectedSkill);
-            }
-          });
-
-          closeModalBtn.addEventListener("click", hideModal);
-          modalBackdrop.addEventListener("click", hideModal);
-          document.addEventListener("keydown", (e) => {
-            if (e.key === "Escape" && !modal.classList.contains("hidden")) {
-              hideModal();
-            }
-          });
-        } catch (error) {
-          console.error("Failed to initialize skill matrix:", error);
-          loader.innerHTML =
-            '<p class="text-red-500">Error: Could not load skill data. Check console for details.</p>';
-        }
-      })();
-    </script>
+    <!-- Custom JavaScript -->
+    <script src="script.js"></script>
   </body>
 </html>
