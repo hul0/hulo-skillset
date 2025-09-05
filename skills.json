@@ -3,100 +3,1275 @@
     "id": "python",
     "name": "Python",
     "category": "Programming",
-    "startDate": "2021-06-01",
+    "startDate": "2019-06-01",
     "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/c/c3/Python-logo-notext.svg",
-    "description": "Primary language for backend development, scripting, and cybersecurity tasks.",
+    "description": "Primary language for backend development, scripting, cybersecurity tooling, automation, and exploit development.",
     "projects": [
       "Developed a port scanner with service detection",
       "Created a web scraping tool for threat intelligence",
-      "Built REST APIs using Flask and FastAPI"
+      "Built REST APIs using Flask and FastAPI",
+      "Wrote automation for security scans and reporting"
     ],
     "resources": [
-      { "name": "Official Docs", "url": "https://docs.python.org/3/" },
-      { "name": "Real Python", "url": "https://realpython.com/" }
+      {
+        "name": "Official Docs",
+        "url": "https://docs.python.org/3/"
+      },
+      {
+        "name": "Real Python",
+        "url": "https://realpython.com/"
+      }
     ]
   },
   {
     "id": "javascript",
     "name": "JavaScript",
     "category": "Programming",
-    "startDate": "2022-01-15",
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/6/6a/JavaScript-logo.png",
-    "description": "Used for frontend interactivity and dynamic web apps. Comfortable with ES6+ features.",
+    "startDate": "2020-01-15",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/9/99/Unofficial_JavaScript_logo_2.svg",
+    "description": "Used for frontend interactivity and dynamic web apps. Comfortable with ES6+ features and Node.js tooling.",
     "projects": [
-      "Built this portfolio website",
+      "Built portfolio website",
       "Developed frontend for a real-time chat app",
-      "Created browser-based tools and games"
+      "Created browser-based pentesting helpers and extensions"
     ],
     "resources": [
-      { "name": "MDN Web Docs", "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript" },
-      { "name": "JavaScript.info", "url": "https://javascript.info/" }
+      {
+        "name": "MDN Web Docs",
+        "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript"
+      },
+      {
+        "name": "JavaScript.info",
+        "url": "https://javascript.info/"
+      }
     ]
   },
   {
-    "id": "cybersecurity",
-    "name": "Cyber Security",
+    "id": "html",
+    "name": "HTML5",
+    "category": "Frontend",
+    "startDate": "2019-03-01",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/6/61/HTML5_logo_and_wordmark.svg",
+    "description": "Markup language for building accessible, semantic web pages.",
+    "projects": [
+      "Structured multiple web projects and landing pages",
+      "Built accessible forms and content for apps"
+    ],
+    "resources": [
+      {
+        "name": "MDN HTML",
+        "url": "https://developer.mozilla.org/en-US/docs/Web/HTML"
+      }
+    ]
+  },
+  {
+    "id": "css",
+    "name": "CSS3",
+    "category": "Frontend",
+    "startDate": "2019-04-01",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/d/d5/CSS3_logo_and_wordmark.svg",
+    "description": "Styling modern responsive UIs with Flexbox, Grid, and modern CSS techniques.",
+    "projects": [
+      "Responsive layouts for web apps",
+      "Theming and responsive animations"
+    ],
+    "resources": [
+      {
+        "name": "MDN CSS",
+        "url": "https://developer.mozilla.org/en-US/docs/Web/CSS"
+      }
+    ]
+  },
+  {
+    "id": "tailwind",
+    "name": "Tailwind CSS",
+    "category": "Frontend",
+    "startDate": "2022-02-01",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/d/d5/Tailwind_CSS_Logo.svg",
+    "description": "Utility-first CSS for rapid UI development and consistent design systems.",
+    "projects": [
+      "Built design system for internal apps using Tailwind",
+      "Converted legacy styles to Tailwind utilities"
+    ],
+    "resources": [
+      {
+        "name": "Tailwind Docs",
+        "url": "https://tailwindcss.com/docs"
+      }
+    ]
+  },
+  {
+    "id": "react",
+    "name": "React.js",
+    "category": "Frontend",
+    "startDate": "2022-03-01",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg",
+    "description": "SPA development with React, hooks, and component-driven architecture.",
+    "projects": [
+      "Built interactive dashboards and tools",
+      "Developed reusable component libraries"
+    ],
+    "resources": [
+      {
+        "name": "React Docs",
+        "url": "https://reactjs.org/docs/getting-started.html"
+      }
+    ]
+  },
+  {
+    "id": "nextjs",
+    "name": "Next.js",
+    "category": "Frontend",
+    "startDate": "2023-01-10",
+    "imageUrl": "https://assets.vercel.com/image/upload/front/assets/design/nextjs-black-logo.svg",
+    "description": "Server-side rendering and full-stack React using Next.js for performant web apps.",
+    "projects": [
+      "Built a static-site portfolio with incremental static regeneration",
+      "Integrated serverless API routes for tools"
+    ],
+    "resources": [
+      {
+        "name": "Next.js Docs",
+        "url": "https://nextjs.org/docs"
+      }
+    ]
+  },
+  {
+    "id": "typescript",
+    "name": "TypeScript",
+    "category": "Programming",
+    "startDate": "2023-02-01",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/4/4c/Typescript_logo_2020.svg",
+    "description": "Typed JavaScript for safer large-scale frontend and backend codebases.",
+    "projects": [
+      "Migrated JS projects to TypeScript",
+      "Improved maintainability of frontend apps"
+    ],
+    "resources": [
+      {
+        "name": "TypeScript Docs",
+        "url": "https://www.typescriptlang.org/docs/"
+      }
+    ]
+  },
+  {
+    "id": "c",
+    "name": "C",
+    "category": "Programming",
+    "startDate": "2018-09-01",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/1/19/C_Programming_Language.svg",
+    "description": "Systems programming and low-level development—useful for exploit dev and reverse engineering.",
+    "projects": [
+      "Implemented low-level tooling and PoC exploits",
+      "Wrote custom network utilities"
+    ],
+    "resources": [
+      {
+        "name": "The C Programming Language",
+        "url": "https://en.wikipedia.org/wiki/The_C_Programming_Language"
+      }
+    ]
+  },
+  {
+    "id": "cpp",
+    "name": "C++",
+    "category": "Programming",
+    "startDate": "2019-01-01",
+    "imageUrl": "https://isocpp.org/assets/images/cpp_logo.png",
+    "description": "Modern C++ for performance-critical and systems-level work.",
+    "projects": [
+      "Built native tools and performance-sensitive modules",
+      "Worked on binary parsing utilities"
+    ],
+    "resources": [
+      {
+        "name": "cppreference",
+        "url": "https://en.cppreference.com/w/"
+      }
+    ]
+  },
+  {
+    "id": "java",
+    "name": "Java",
+    "category": "Programming",
+    "startDate": "2020-05-01",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/en/3/30/Java_programming_language_logo.svg",
+    "description": "Familiar with Java for tooling, Android basics and backend services.",
+    "projects": [
+      "Small backend services and Android app components",
+      "Integrated Java modules in tooling"
+    ],
+    "resources": [
+      {
+        "name": "OpenJDK",
+        "url": "https://openjdk.org/"
+      }
+    ]
+  },
+  {
+    "id": "kotlin",
+    "name": "Kotlin",
+    "category": "Programming",
+    "startDate": "2021-03-01",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/7/74/Kotlin_Icon.png",
+    "description": "Android/full-stack Kotlin development (Compose familiarity from prior work).",
+    "projects": [
+      "Android UI components and screens",
+      "Integrated secure file operations in mobile app"
+    ],
+    "resources": [
+      {
+        "name": "Kotlin Docs",
+        "url": "https://kotlinlang.org/docs/home.html"
+      }
+    ]
+  },
+  {
+    "id": "go",
+    "name": "Go (Golang)",
+    "category": "Programming",
+    "startDate": "2023-04-01",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/0/05/Go_Logo_Blue.svg",
+    "description": "Modern systems language for low-latency tools, network services, and some pentest tooling.",
+    "projects": [
+      "Built CLI tools and network scanners",
+      "Compiled static binaries for deployment"
+    ],
+    "resources": [
+      {
+        "name": "Go Docs",
+        "url": "https://golang.org/doc/"
+      }
+    ]
+  },
+  {
+    "id": "rust",
+    "name": "Rust",
+    "category": "Programming",
+    "startDate": "2023-06-01",
+    "imageUrl": "https://www.rust-lang.org/logos/rust-logo-512x512.png",
+    "description": "Memory-safe systems programming for secure tooling and performance-critical components.",
+    "projects": [
+      "Experimented with Rust for secure parsers",
+      "Rewrote performance-sensitive components"
+    ],
+    "resources": [
+      {
+        "name": "Rust Book",
+        "url": "https://doc.rust-lang.org/book/"
+      }
+    ]
+  },
+  {
+    "id": "assembly",
+    "name": "Assembly (x86/x64)",
+    "category": "Programming",
+    "startDate": "2022-11-01",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/1/1b/Assembly_language_logo.png",
+    "description": "Low level assembly knowledge useful for reverse engineering and exploit development.",
+    "projects": [
+      "Analyzed binaries in reverse engineering exercises",
+      "Wrote small shellcode PoCs"
+    ],
+    "resources": [
+      {
+        "name": "Assembly Tutorials",
+        "url": "https://www.tutorialspoint.com/assembly_programming/"
+      }
+    ]
+  },
+  {
+    "id": "typescript_server",
+    "name": "TypeScript (Node.js)",
+    "category": "Programming",
+    "startDate": "2023-03-01",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/4/4c/Typescript_logo_2020.svg",
+    "description": "Typed backend development with Node.js and TypeScript (APIs, tooling).",
+    "projects": [
+      "Built typed backend APIs for tooling",
+      "Tool integrations with TS-based CLIs"
+    ],
+    "resources": [
+      {
+        "name": "Node.js",
+        "url": "https://nodejs.org/"
+      }
+    ]
+  },
+  {
+    "id": "mysql",
+    "name": "MySQL",
+    "category": "Databases",
+    "startDate": "2019-10-01",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/en/d/dd/MySQL_logo.svg",
+    "description": "Relational database experience for web apps and tooling data stores.",
+    "projects": [
+      "Backed web apps with MySQL",
+      "Managed small production databases"
+    ],
+    "resources": [
+      {
+        "name": "MySQL Docs",
+        "url": "https://dev.mysql.com/doc/"
+      }
+    ]
+  },
+  {
+    "id": "sqlite",
+    "name": "SQLite",
+    "category": "Databases",
+    "startDate": "2019-11-01",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/3/38/SQLite370.svg",
+    "description": "Lightweight embedded database for mobile and desktop apps.",
+    "projects": [
+      "Used SQLite for mobile app local storage",
+      "Wrote migration utilities"
+    ],
+    "resources": [
+      {
+        "name": "SQLite Docs",
+        "url": "https://www.sqlite.org/docs.html"
+      }
+    ]
+  },
+  {
+    "id": "roomdb",
+    "name": "RoomDB",
+    "category": "Databases",
+    "startDate": "2021-08-01",
+    "imageUrl": "https://developer.android.com/images/brand/Android_Room.png",
+    "description": "Android-friendly ORM for local persistence and typed DB access.",
+    "projects": [
+      "Integrated RoomDB into Android projects",
+      "Implemented migrations and DAOs"
+    ],
+    "resources": [
+      {
+        "name": "Room Docs",
+        "url": "https://developer.android.com/jetpack/androidx/releases/room"
+      }
+    ]
+  },
+  {
+    "id": "mongodb",
+    "name": "MongoDB",
+    "category": "Databases",
+    "startDate": "2020-07-01",
+    "imageUrl": "https://www.mongodb.com/assets/images/global/leaf.svg",
+    "description": "Document database for flexible schemas and rapid prototyping.",
+    "projects": [
+      "Stored app telemetry and project metadata",
+      "Built simple analytics pipelines"
+    ],
+    "resources": [
+      {
+        "name": "MongoDB Docs",
+        "url": "https://docs.mongodb.com/"
+      }
+    ]
+  },
+  {
+    "id": "prisma",
+    "name": "Prisma",
+    "category": "Databases / ORM",
+    "startDate": "2023-05-01",
+    "imageUrl": "https://www.vectorlogo.zone/logos/prisma/prisma-icon.svg",
+    "description": "Modern ORM for type-safe database access in TypeScript/Node apps.",
+    "projects": [
+      "Used Prisma to model DB schemas and migrations",
+      "Integrated Prisma into Next.js APIs"
+    ],
+    "resources": [
+      {
+        "name": "Prisma Docs",
+        "url": "https://www.prisma.io/docs"
+      }
+    ]
+  },
+  {
+    "id": "docker",
+    "name": "Docker",
+    "category": "DevOps",
+    "startDate": "2020-06-01",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/en/f/f4/Docker_logo.svg",
+    "description": "Containerization for reproducible environments and tooling.",
+    "projects": [
+      "Containerized web apps and security tools",
+      "Built reproducible dev environments"
+    ],
+    "resources": [
+      {
+        "name": "Docker Docs",
+        "url": "https://docs.docker.com/"
+      }
+    ]
+  },
+  {
+    "id": "kubernetes",
+    "name": "Kubernetes",
+    "category": "DevOps",
+    "startDate": "2022-09-01",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/3/39/Kubernetes_logo_without_workmark.svg",
+    "description": "Orchestration for scalable deployments and cloud-native tooling.",
+    "projects": [
+      "Deployed small apps to k8s clusters",
+      "Used k8s for staging and experiments"
+    ],
+    "resources": [
+      {
+        "name": "Kubernetes Docs",
+        "url": "https://kubernetes.io/docs/home/"
+      }
+    ]
+  },
+  {
+    "id": "apache",
+    "name": "Apache HTTP Server",
+    "category": "Infrastructure",
+    "startDate": "2019-08-01",
+    "imageUrl": "https://httpd.apache.org/images/httpd-logo.png",
+    "description": "Web server administration and hosting static/dynamic content.",
+    "projects": [
+      "Hosted personal web servers",
+      "Configured virtual hosts and SSL"
+    ],
+    "resources": [
+      {
+        "name": "Apache Docs",
+        "url": "https://httpd.apache.org/docs/"
+      }
+    ]
+  },
+  {
+    "id": "phpmyadmin",
+    "name": "phpMyAdmin",
+    "category": "Tools",
+    "startDate": "2019-11-15",
+    "imageUrl": "https://www.phpmyadmin.net/static/images/logo.svg",
+    "description": "Web UI for managing MySQL databases during development.",
+    "projects": [
+      "Administered local MySQL instances",
+      "Used for quick table inspection and exports"
+    ],
+    "resources": [
+      {
+        "name": "phpMyAdmin",
+        "url": "https://www.phpmyadmin.net/"
+      }
+    ]
+  },
+  {
+    "id": "devops",
+    "name": "DevOps",
+    "category": "Practices",
+    "startDate": "2020-07-01",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/0/05/Devops-logo.svg",
+    "description": "CI/CD, infrastructure as code, automation, and environment parity practices.",
+    "projects": [
+      "Set up GitHub Actions for CI",
+      "Automated deployments using Docker and scripts"
+    ],
+    "resources": [
+      {
+        "name": "DevOps Handbook",
+        "url": "https://itrevolution.com/book/the-devops-handbook/"
+      }
+    ]
+  },
+  {
+    "id": "ethical_hacking",
+    "name": "Ethical Hacking",
     "category": "Security",
     "startDate": "2020-09-01",
     "imageUrl": "https://cdn-icons-png.flaticon.com/512/3135/3135715.png",
-    "description": "Focus on ethical hacking, vulnerability assessment, and network defense.",
+    "description": "Ethical approaches to discovering and responsibly disclosing vulnerabilities.",
     "projects": [
-      "Participated in Capture The Flag (CTF) competitions",
-      "Conducted vulnerability scans on local networks",
-      "Authored security reports for personal projects"
+      "Performed authorized penetration tests on lab environments",
+      "Documented findings and remediation steps"
     ],
     "resources": [
-      { "name": "Hack The Box", "url": "https://www.hackthebox.com/" },
-      { "name": "OWASP Top Ten", "url": "https://owasp.org/www-project-top-ten/" }
+      {
+        "name": "EC-Council",
+        "url": "https://www.eccouncil.org/"
+      }
     ]
   },
   {
-    "id": "networking",
-    "name": "Networking",
-    "category": "Infrastructure",
-    "startDate": "2021-02-10",
+    "id": "penetration_testing",
+    "name": "Penetration Testing",
+    "category": "Security",
+    "startDate": "2020-10-01",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/2/2b/Penetration_testing.png",
+    "description": "Hands-on offensive testing (web, network, mobile) to assess security posture.",
+    "projects": [
+      "Web app pentests using Burp and manual audits",
+      "Network pentests with Nmap and Metasploit"
+    ],
+    "resources": [
+      {
+        "name": "Offensive Security",
+        "url": "https://www.offensive-security.com/"
+      }
+    ]
+  },
+  {
+    "id": "red_team",
+    "name": "Red Teaming",
+    "category": "Security",
+    "startDate": "2021-05-01",
+    "imageUrl": "https://cdn-icons-png.flaticon.com/512/3135/3135715.png",
+    "description": "Adversary-emulation exercises focusing on stealth, persistence, and lateral movement.",
+    "projects": [
+      "Simulated phishing campaigns and lateral movement in lab networks",
+      "Documented attack chains and mitigation recommendations"
+    ],
+    "resources": [
+      {
+        "name": "MITRE ATT&CK",
+        "url": "https://attack.mitre.org/"
+      }
+    ]
+  },
+  {
+    "id": "blue_team",
+    "name": "Blue Teaming",
+    "category": "Security",
+    "startDate": "2021-06-01",
+    "imageUrl": "https://cdn-icons-png.flaticon.com/512/3135/3135715.png",
+    "description": "Defensive security, detection engineering, and incident handling.",
+    "projects": [
+      "Built detection rules for common attacker behaviors",
+      "Conducted tabletop incident response exercises"
+    ],
+    "resources": [
+      {
+        "name": "SANS Blue Team Resources",
+        "url": "https://www.sans.org/"
+      }
+    ]
+  },
+  {
+    "id": "threat_intel",
+    "name": "Threat Intelligence",
+    "category": "Security",
+    "startDate": "2021-02-01",
+    "imageUrl": "https://icons-for-free.com/download-icon-threat+intelligence+icon-1320162281181477728_512.png",
+    "description": "Collecting, analysing, and operationalizing threat data to improve defenses.",
+    "projects": [
+      "Built feeds and parsers for IOCs and indicators",
+      "Correlated telemetry to identify targeted campaigns"
+    ],
+    "resources": [
+      {
+        "name": "MISP",
+        "url": "https://misp.github.io/"
+      }
+    ]
+  },
+  {
+    "id": "threat_hunting",
+    "name": "Threat Hunting",
+    "category": "Security",
+    "startDate": "2021-03-01",
+    "imageUrl": "https://icons-for-free.com/download-icon-threat+intelligence+icon-1320162281181477728_512.png",
+    "description": "Proactive search for anomalous activity within networks and endpoints.",
+    "projects": [
+      "Hunt hypotheses and telemetry analysis in lab environment",
+      "Developed custom hunt queries for SIEM"
+    ],
+    "resources": [
+      {
+        "name": "Hunting Guide",
+        "url": "https://www.sans.org/cyber-security-courses/cyber-threat-hunting/"
+      }
+    ]
+  },
+  {
+    "id": "exploit_dev",
+    "name": "Exploit Development",
+    "category": "Security",
+    "startDate": "2022-01-01",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/7/7a/Exploit_icon.png",
+    "description": "Developing proof-of-concept exploits and understanding vulnerable binaries.",
+    "projects": [
+      "Built PoC exploits for CTF and lab binaries",
+      "Practiced stack/heap exploitation techniques"
+    ],
+    "resources": [
+      {
+        "name": "Corelan",
+        "url": "https://www.corelan.be/"
+      }
+    ]
+  },
+  {
+    "id": "reverse_engineering",
+    "name": "Reverse Engineering / Malware Analysis",
+    "category": "Security",
+    "startDate": "2022-02-01",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/5/5a/Reverse_engineering_icon.png",
+    "description": "Static and dynamic analysis of binaries and malware samples.",
+    "projects": [
+      "Analyzed binaries with IDA/ghidra for CTF",
+      "Performed basic dynamic analysis in sandboxed environments"
+    ],
+    "resources": [
+      {
+        "name": "Ghidra",
+        "url": "https://ghidra-sre.org/"
+      }
+    ]
+  },
+  {
+    "id": "web_app_security",
+    "name": "Web Application Security",
+    "category": "Security",
+    "startDate": "2020-11-01",
+    "imageUrl": "https://owasp.org/assets/images/logos/owasp_logo_2013.png",
+    "description": "OWASP-focused testing with Burp Suite and manual analysis.",
+    "projects": [
+      "Tested apps for OWASP Top 10 issues",
+      "Automated finding validation with custom scripts"
+    ],
+    "resources": [
+      {
+        "name": "OWASP Top Ten",
+        "url": "https://owasp.org/www-project-top-ten/"
+      }
+    ]
+  },
+  {
+    "id": "network_security",
+    "name": "Network Security",
+    "category": "Security",
+    "startDate": "2021-04-01",
     "imageUrl": "https://cdn-icons-png.flaticon.com/512/906/906343.png",
-    "description": "Understanding of TCP/IP, DNS, HTTP/S, and network troubleshooting with Wireshark.",
+    "description": "Design and monitoring of network security controls (IDS/IPS, segmentation).",
     "projects": [
-      "Set up and managed a home lab network",
-      "Analyzed packet captures to troubleshoot issues",
-      "Wrote scripts for network discovery"
+      "Designed network segmentation in home lab",
+      "Configured IDS sensors and packet capture workflows"
     ],
     "resources": [
-      { "name": "Wireshark Docs", "url": "https://www.wireshark.org/docs/" }
+      {
+        "name": "Wireshark Docs",
+        "url": "https://www.wireshark.org/docs/"
+      }
     ]
   },
   {
-    "id": "linux",
-    "name": "Linux",
-    "category": "Operating Systems",
-    "startDate": "2020-11-20",
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/3/35/Tux.svg",
-    "description": "Daily driver OS. Skilled in Bash scripting, system admin, and service management.",
-    "projects": [
-      "Configured and hardened a personal web server",
-      "Automated system backups and updates with cron",
-      "Customized desktop environment for productivity"
-    ],
-    "resources": [
-      { "name": "Linux Command Line (Book)", "url": "http://linuxcommand.org/tlcl.php" },
-      { "name": "ArchWiki", "url": "https://wiki.archlinux.org/" }
-    ]
-  },
-  {
-    "id": "git",
-    "name": "Git & GitHub",
+    "id": "metasploit",
+    "name": "Metasploit",
     "category": "Tools",
-    "startDate": "2021-07-01",
-    "imageUrl": "https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png",
-    "description": "Version control for all projects. Comfortable with branching, merging, and CI/CD.",
+    "startDate": "2020-12-01",
+    "imageUrl": "https://www.rapid7.com/assets/img/logos/metasploit.svg",
+    "description": "Exploit development and rapid testing framework.",
     "projects": [
-      "Manage all personal projects on GitHub",
-      "Contributed to open-source repos",
-      "Used GitHub Actions for CI/CD"
+      "Used Metasploit modules to validate vulnerabilities in lab",
+      "Developed auxiliary modules for automation"
     ],
     "resources": [
-      { "name": "Pro Git (Book)", "url": "https://git-scm.com/book/en/v2" }
+      {
+        "name": "Metasploit Docs",
+        "url": "https://docs.rapid7.com/metasploit/"
+      }
+    ]
+  },
+  {
+    "id": "nmap",
+    "name": "Nmap",
+    "category": "Tools",
+    "startDate": "2019-09-01",
+    "imageUrl": "https://nmap.org/images/nmap-logo-2010.png",
+    "description": "Network discovery, port scanning, and service fingerprinting.",
+    "projects": [
+      "Regular network inventories and scans",
+      "Scripted nmap runs for recurring assessments"
+    ],
+    "resources": [
+      {
+        "name": "Nmap Docs",
+        "url": "https://nmap.org/docs.html"
+      }
+    ]
+  },
+  {
+    "id": "burp",
+    "name": "Burp Suite",
+    "category": "Tools",
+    "startDate": "2020-11-15",
+    "imageUrl": "https://portswigger.net/burp/assets/images/logo.svg",
+    "description": "Primary web pentesting proxy for interception, scanning, and exploit validation.",
+    "projects": [
+      "Used Burp for comprehensive web assessments",
+      "Wrote Burp extensions to automate repetitive tasks"
+    ],
+    "resources": [
+      {
+        "name": "PortSwigger Academy",
+        "url": "https://portswigger.net/web-security"
+      }
+    ]
+  },
+  {
+    "id": "nessus",
+    "name": "Nessus",
+    "category": "Tools",
+    "startDate": "2021-01-01",
+    "imageUrl": "https://www.tenable.com/sites/drupal.dmz.tenable.com/files/styles/product_logo/public/2020-06/nessus-rectangle-logo.png",
+    "description": "Vulnerability scanning and reporting platform.",
+    "projects": [
+      "Performed scheduled vulnerability scans on lab systems",
+      "Tuned scan policies to reduce false positives"
+    ],
+    "resources": [
+      {
+        "name": "Nessus Docs",
+        "url": "https://support.tenable.com/"
+      }
+    ]
+  },
+  {
+    "id": "cobalt_strike",
+    "name": "Cobalt Strike",
+    "category": "Tools",
+    "startDate": "2022-06-01",
+    "imageUrl": "https://www.cobaltstrike.com/img/logo-cobalt-strike.svg",
+    "description": "Adversary simulation and red-team post-exploitation tooling (used responsibly in labs).",
+    "projects": [
+      "Simulated post-exploitation scenarios in lab",
+      "Mapped detection gaps and recommended controls"
+    ],
+    "resources": [
+      {
+        "name": "Cobalt Strike",
+        "url": "https://www.cobaltstrike.com/"
+      }
+    ]
+  },
+  {
+    "id": "osint",
+    "name": "OSINT Tools & Techniques",
+    "category": "Security",
+    "startDate": "2020-08-01",
+    "imageUrl": "https://icons-for-free.com/download-icon-open+source+intelligence+logo-1320184561890315673_512.png",
+    "description": "Open-source intelligence collection using tools like Maltego, Recon-ng, and custom scripts.",
+    "projects": [
+      "Collected public IOCs for threat intel",
+      "Built recon playbooks for engagement prep"
+    ],
+    "resources": [
+      {
+        "name": "Maltego",
+        "url": "https://www.maltego.com/"
+      }
+    ]
+  },
+  {
+    "id": "uiux",
+    "name": "UI/UX Design",
+    "category": "Design",
+    "startDate": "2021-07-01",
+    "imageUrl": "https://cdn-icons-png.flaticon.com/512/727/727245.png",
+    "description": "Designing minimal, usable interfaces for apps and web products.",
+    "projects": [
+      "Designed mobile app screens with a minimal aesthetic",
+      "Created UX flows for onboarding and settings"
+    ],
+    "resources": [
+      {
+        "name": "NNGroup",
+        "url": "https://www.nngroup.com/"
+      }
+    ]
+  },
+  {
+    "id": "mobile_security",
+    "name": "Mobile Security (Android/iOS)",
+    "category": "Security",
+    "startDate": "2021-09-01",
+    "imageUrl": "https://icons-for-free.com/download-icon-mobile+security+icon-1320187753380312890_512.png",
+    "description": "Assessments of mobile apps, secure storage, and platform hardening.",
+    "projects": [
+      "Tested Android apps for insecure storage and improper permissions",
+      "Reviewed mobile app network traffic for leaks"
+    ],
+    "resources": [
+      {
+        "name": "OWASP Mobile Top 10",
+        "url": "https://owasp.org/www-project-mobile-top-10/"
+      }
+    ]
+  },
+  {
+    "id": "game_dev",
+    "name": "Game Development",
+    "category": "Hobbies",
+    "startDate": "2020-05-01",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/6/69/Game_icon.svg",
+    "description": "Hobbyist game development experience (engines, prototypes).",
+    "projects": [
+      "Built small game prototypes and mechanics",
+      "Experimented with game networking and physics"
+    ],
+    "resources": [
+      {
+        "name": "Unity",
+        "url": "https://unity.com/"
+      }
+    ]
+  },
+  {
+    "id": "blockchain_security",
+    "name": "Blockchain / Web3 Security",
+    "category": "Security",
+    "startDate": "2023-01-01",
+    "imageUrl": "https://cryptologos.cc/logos/ethereum-eth-logo.png",
+    "description": "Understanding smart contract risks and Web3 attack surfaces.",
+    "projects": [
+      "Reviewed simple smart contract flows",
+      "Studied common DeFi vulnerabilities"
+    ],
+    "resources": [
+      {
+        "name": "OpenZeppelin",
+        "url": "https://docs.openzeppelin.com/"
+      }
+    ]
+  },
+  {
+    "id": "bug_bounty",
+    "name": "Bug Bounty",
+    "category": "Security",
+    "startDate": "2020-10-15",
+    "imageUrl": "https://www.hackerone.com/sites/default/files/hackerone-logo.svg",
+    "description": "Participate in coordinated disclosure and bounty programs to find real-world bugs.",
+    "projects": [
+      "Reported multiple low/medium issues in bug bounty programs",
+      "Triaged reports and produced reproducible PoCs"
+    ],
+    "resources": [
+      {
+        "name": "HackerOne",
+        "url": "https://www.hackerone.com/"
+      }
+    ]
+  },
+  {
+    "id": "typeScript_extra",
+    "name": "TypeScript (extras)",
+    "category": "Programming",
+    "startDate": "2023-02-15",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/4/4c/Typescript_logo_2020.svg",
+    "description": "Advanced typing patterns and tooling in large JS/TS codebases.",
+    "projects": [
+      "Introduced strict typing to shared libraries",
+      "Improved DX with typed API clients"
+    ],
+    "resources": [
+      {
+        "name": "TypeScript Handbook",
+        "url": "https://www.typescriptlang.org/docs/handbook/intro.html"
+      }
+    ]
+  },
+  {
+    "id": "scapy",
+    "name": "Scapy",
+    "category": "Security / Python",
+    "startDate": "2021-05-01",
+    "imageUrl": "https://scapy.net/logo.png",
+    "description": "Packet crafting and network manipulation using Scapy for testing and PoCs.",
+    "projects": [
+      "Created custom packets for evasion and testing",
+      "Automated pcap creation and analysis"
+    ],
+    "resources": [
+      {
+        "name": "Scapy Docs",
+        "url": "https://scapy.net/"
+      }
+    ]
+  },
+  {
+    "id": "pwntools",
+    "name": "Pwntools",
+    "category": "Security / Python",
+    "startDate": "2022-01-01",
+    "imageUrl": "https://pwntools.github.io/logo.png",
+    "description": "CTF and exploit development helper library in Python.",
+    "projects": [
+      "Built exploit scripts for CTF challenges",
+      "Automated interactions with remote services"
+    ],
+    "resources": [
+      {
+        "name": "Pwntools",
+        "url": "https://docs.pwntools.com/en/stable/"
+      }
+    ]
+  },
+  {
+    "id": "requests_bs",
+    "name": "Requests & BeautifulSoup",
+    "category": "Security / Python",
+    "startDate": "2019-08-01",
+    "imageUrl": "https://docs.python.org/3/_static/py.png",
+    "description": "Web scraping and reconnaissance automation using Requests and BeautifulSoup.",
+    "projects": [
+      "Built recon crawlers to gather public metadata",
+      "Parsed target sites for form/action discovery"
+    ],
+    "resources": [
+      {
+        "name": "Requests",
+        "url": "https://docs.python-requests.org/"
+      },
+      {
+        "name": "BeautifulSoup",
+        "url": "https://www.crummy.com/software/BeautifulSoup/"
+      }
+    ]
+  },
+  {
+    "id": "paramiko",
+    "name": "Paramiko",
+    "category": "Security / Python",
+    "startDate": "2020-09-01",
+    "imageUrl": "https://www.paramiko.org/images/paramiko-logo.png",
+    "description": "SSH automation for safe remote interactions and pentest tooling.",
+    "projects": [
+      "Automated SSH tasks and remote file manipulation",
+      "Built pivoting helpers for test labs"
+    ],
+    "resources": [
+      {
+        "name": "Paramiko Docs",
+        "url": "https://www.paramiko.org/"
+      }
+    ]
+  },
+  {
+    "id": "impacket",
+    "name": "Impacket",
+    "category": "Security / Python",
+    "startDate": "2021-04-01",
+    "imageUrl": "https://github.com/SecureAuthCorp/impacket/raw/master/logo.png",
+    "description": "Collection of Python classes for working with network protocols (SMB, NTLM, LDAP).",
+    "projects": [
+      "Used Impacket for AD-related exploitation and SMB tooling",
+      "Automated Windows authentication flows in lab"
+    ],
+    "resources": [
+      {
+        "name": "Impacket GitHub",
+        "url": "https://github.com/SecureAuthCorp/impacket"
+      }
+    ]
+  },
+  {
+    "id": "sqlmap",
+    "name": "SQLMap",
+    "category": "Security / Tools",
+    "startDate": "2020-12-01",
+    "imageUrl": "https://sqlmap.org/assets/img/sqlmap_logo.png",
+    "description": "Automated SQL injection discovery and exploitation tool.",
+    "projects": [
+      "Validated SQLi issues and extracted test data in lab",
+      "Used sqlmap for rapid verification of injection findings"
+    ],
+    "resources": [
+      {
+        "name": "sqlmap",
+        "url": "https://sqlmap.org/"
+      }
+    ]
+  },
+  {
+    "id": "mitmproxy",
+    "name": "mitmproxy",
+    "category": "Security / Tools",
+    "startDate": "2021-06-01",
+    "imageUrl": "https://mitmproxy.org/assets/img/logo.png",
+    "description": "Interactive man-in-the-middle proxy for HTTP/HTTPS inspection and manipulation.",
+    "projects": [
+      "Intercepted mobile app traffic to infer API usage",
+      "Replayed and modified requests for PoC"
+    ],
+    "resources": [
+      {
+        "name": "mitmproxy",
+        "url": "https://mitmproxy.org/"
+      }
+    ]
+  },
+  {
+    "id": "rapidfuzz",
+    "name": "RapidFuzz / Fuzzy Matching",
+    "category": "Security / Tools",
+    "startDate": "2022-03-01",
+    "imageUrl": "https://github.com/maxbachmann/RapidFuzz/raw/master/logo.png",
+    "description": "Fuzzy string matching for OSINT, deduplication, and wordlist optimization.",
+    "projects": [
+      "Used fuzzy matching to cluster similar OSINT results",
+      "Optimized wordlists for password guessing"
+    ],
+    "resources": [
+      {
+        "name": "RapidFuzz",
+        "url": "https://github.com/maxbachmann/RapidFuzz"
+      }
+    ]
+  },
+  {
+    "id": "cryptography_lib",
+    "name": "Cryptography (Python lib)",
+    "category": "Security / Python",
+    "startDate": "2021-09-01",
+    "imageUrl": "https://cryptography.io/en/latest/_static/cryptography-logo.png",
+    "description": "Python cryptography primitives and utilities for secure prototyping.",
+    "projects": [
+      "Implemented secure encryption helpers for tooling",
+      "Experimented with key management in PoCs"
+    ],
+    "resources": [
+      {
+        "name": "Cryptography.io",
+        "url": "https://cryptography.io/"
+      }
+    ]
+  },
+  {
+    "id": "ml_basics",
+    "name": "Machine Learning Basics",
+    "category": "Data / AI",
+    "startDate": "2022-08-01",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/0/02/Scikit_learn_logo.svg",
+    "description": "Foundational ML knowledge (models, datasets) used for analytics and AI-assisted tooling.",
+    "projects": [
+      "Built small classifiers for text/IOCs",
+      "Experimented with ML-assisted triage"
+    ],
+    "resources": [
+      {
+        "name": "Scikit-learn",
+        "url": "https://scikit-learn.org/"
+      }
+    ]
+  },
+  {
+    "id": "ai_security",
+    "name": "AI Security",
+    "category": "Security / AI",
+    "startDate": "2023-03-01",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/4/4c/Artificial_Intelligence_logo.png",
+    "description": "Understanding adversarial ML risks and defenses for models and pipelines.",
+    "projects": [
+      "Explored adversarial examples and data poisoning",
+      "Built small defenses for model input validation"
+    ],
+    "resources": [
+      {
+        "name": "Adversarial ML Papers",
+        "url": "https://arxiv.org/search/?query=adversarial+machine+learning"
+      }
+    ]
+  },
+  {
+    "id": "kali",
+    "name": "Kali Linux",
+    "category": "Operating Systems",
+    "startDate": "2020-02-01",
+    "imageUrl": "https://www.kali.org/images/kali-logo.svg",
+    "description": "Security-focused Linux distro packed with pentesting tools for lab use.",
+    "projects": [
+      "Built and maintained Kali VMs for testing",
+      "Used Kali for hands-on pentesting exercises"
+    ],
+    "resources": [
+      {
+        "name": "Kali Docs",
+        "url": "https://www.kali.org/docs/"
+      }
+    ]
+  },
+  {
+    "id": "parrot",
+    "name": "Parrot Security OS",
+    "category": "Operating Systems",
+    "startDate": "2021-01-01",
+    "imageUrl": "https://www.parrotsec.org/images/logo/parrot-logo.svg",
+    "description": "Privacy and pentesting focused distro used as an alternative to Kali.",
+    "projects": [
+      "Explored Parrot for lightweight pentesting VMs",
+      "Configured tools and workflows"
+    ],
+    "resources": [
+      {
+        "name": "Parrot Docs",
+        "url": "https://parrotsec.org/docs/"
+      }
+    ]
+  },
+  {
+    "id": "arch",
+    "name": "Arch Linux",
+    "category": "Operating Systems",
+    "startDate": "2020-04-01",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/a/a5/Archlinux-logo-as-of-2020-03-17.svg",
+    "description": "Rolling-release Linux used as a daily driver for customization and performance.",
+    "projects": [
+      "Customized Arch for productivity and development",
+      "Maintained dotfiles and system configs"
+    ],
+    "resources": [
+      {
+        "name": "ArchWiki",
+        "url": "https://wiki.archlinux.org/"
+      }
+    ]
+  },
+  {
+    "id": "ubuntu",
+    "name": "Ubuntu / Debian",
+    "category": "Operating Systems",
+    "startDate": "2019-06-01",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/a/ab/Logo-ubuntu_cof-orange-hex.svg",
+    "description": "Stable server and desktop distributions for development and deployments.",
+    "projects": [
+      "Hosted apps on Ubuntu servers",
+      "Used Debian-based tooling for services"
+    ],
+    "resources": [
+      {
+        "name": "Ubuntu Docs",
+        "url": "https://help.ubuntu.com/"
+      }
+    ]
+  },
+  {
+    "id": "fedora",
+    "name": "Fedora / RedHat / CentOS",
+    "category": "Operating Systems",
+    "startDate": "2020-09-01",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/4/4f/Fedora_logo.svg",
+    "description": "RPM-based distributions used for testing and server workloads.",
+    "projects": [
+      "Configured services on Fedora instances",
+      "Tested packaging and deployment workflows"
+    ],
+    "resources": [
+      {
+        "name": "Fedora Docs",
+        "url": "https://docs.fedoraproject.org/"
+      }
+    ]
+  },
+  {
+    "id": "windows_server",
+    "name": "Windows Server & AD",
+    "category": "Operating Systems",
+    "startDate": "2021-10-01",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/0/07/Windows_logo_-_2021.svg",
+    "description": "Active Directory, Group Policy, and enterprise Windows server administration knowledge.",
+    "projects": [
+      "Deployed Windows Server for lab AD testing",
+      "Practiced AD enumeration and privilege modeling"
+    ],
+    "resources": [
+      {
+        "name": "Microsoft Docs",
+        "url": "https://docs.microsoft.com/"
+      }
+    ]
+  },
+  {
+    "id": "macos",
+    "name": "macOS",
+    "category": "Operating Systems",
+    "startDate": "2021-03-01",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/2/21/MacOS_wordmark_(2017).svg",
+    "description": "macOS for development and mac-specific tooling.",
+    "projects": [
+      "Configured dev environments and shell setups",
+      "Used macOS for app development and testing"
+    ],
+    "resources": [
+      {
+        "name": "Apple Dev Docs",
+        "url": "https://developer.apple.com/documentation"
+      }
+    ]
+  },
+  {
+    "id": "tails",
+    "name": "Tails",
+    "category": "Operating Systems",
+    "startDate": "2022-01-01",
+    "imageUrl": "https://tails.boum.org/assets/images/logo-2016.svg",
+    "description": "Privacy-focused live OS for forensic and privacy workflows.",
+    "projects": [
+      "Used Tails for privacy research and ephemeral sessions",
+      "Tested forensic workflows in controlled labs"
+    ],
+    "resources": [
+      {
+        "name": "Tails Docs",
+        "url": "https://tails.boum.org/doc/"
+      }
+    ]
+  },
+  {
+    "id": "qubes",
+    "name": "Qubes OS",
+    "category": "Operating Systems",
+    "startDate": "2022-06-01",
+    "imageUrl": "https://www.qubes-os.org/media/images/qubes-logo.svg",
+    "description": "Security-oriented OS with strong compartmentalization.",
+    "projects": [
+      "Explored compartmentalized workflows for sensitive tasks",
+      "Tested app isolation strategies"
+    ],
+    "resources": [
+      {
+        "name": "Qubes Docs",
+        "url": "https://www.qubes-os.org/doc/"
+      }
+    ]
+  },
+  {
+    "id": "termux",
+    "name": "Termux",
+    "category": "Tools / Mobile",
+    "startDate": "2020-08-01",
+    "imageUrl": "https://termux.com/images/logo.svg",
+    "description": "Android terminal emulator for running Linux utilities and scripts on-device.",
+    "projects": [
+      "Used Termux for on-device scripting and quick recon",
+      "Set up small development environments on mobile"
+    ],
+    "resources": [
+      {
+        "name": "Termux Wiki",
+        "url": "https://wiki.termux.com/"
+      }
+    ]
+  },
+  {
+    "id": "linux_mint",
+    "name": "Linux Mint",
+    "category": "Operating Systems",
+    "startDate": "2019-05-01",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/3/3f/Linux_Mint_logo_without_wordmark.svg",
+    "description": "User-friendly distribution used for daily tasks and development.",
+    "projects": [
+      "Configured Mint as a secondary dev environment",
+      "Maintained dotfiles and ergonomic setups"
+    ],
+    "resources": [
+      {
+        "name": "Linux Mint",
+        "url": "https://linuxmint.com/"
+      }
     ]
   }
 ]
