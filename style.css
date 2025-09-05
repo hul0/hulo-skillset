@@ -1,0 +1,310 @@
+/* Custom Properties */
+:root {
+  --bg-primary: #05080a;
+  --bg-secondary: #0a0f14;
+  --border-color: #1a222c;
+  --text-primary: #e6f1ff;
+  --text-secondary: #8a99b0;
+  --accent: #00f5d4;
+  --accent-glow: rgba(0, 245, 212, 0.2);
+}
+
+/* Custom Cursors */
+html {
+  cursor: url("data:image/svg+xml,%3Csvg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M12 4V20M4 12H20' stroke='%2300f5d4' stroke-width='2'/%3E%3C/svg%3E")
+      12 12,
+    auto;
+}
+
+button,
+a {
+  cursor: url("data:image/svg+xml,%3Csvg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M12 4V20M4 12H20' stroke='%2300f5d4' stroke-width='2'/%3E%3Ccircle cx='12' cy='12' r='3' fill='%2300f5d4'/%3E%3C/svg%3E")
+      12 12,
+    pointer;
+}
+
+/* Base Styles */
+body {
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
+  font-family: "JetBrains Mono", monospace;
+  background-image: radial-gradient(
+    var(--border-color) 1px,
+    transparent 1px
+  );
+  background-size: 20px 20px;
+}
+
+/* Utility Classes */
+.holographic-glow {
+  box-shadow: 0 0 15px var(--accent-glow), 0 0 30px var(--accent-glow);
+}
+
+.bg-secondary-glass {
+  background-color: rgba(10, 15, 20, 0.8);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+}
+
+/* Action Buttons */
+.action-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.75rem 1.5rem;
+  background-color: transparent;
+  border: 1px solid var(--accent);
+  color: var(--accent);
+  border-radius: 0.5rem;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  text-decoration: none;
+}
+
+.action-btn:hover {
+  background-color: var(--accent);
+  color: var(--bg-primary);
+  box-shadow: 0 0 20px var(--accent-glow);
+  transform: translateY(-2px);
+}
+
+/* Social Links */
+.social-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 3rem;
+  height: 3rem;
+  background-color: transparent;
+  border: 1px solid var(--border-color);
+  color: var(--text-secondary);
+  border-radius: 0.5rem;
+  transition: all 0.3s ease;
+  text-decoration: none;
+}
+
+.social-link:hover {
+  border-color: var(--accent);
+  color: var(--accent);
+  box-shadow: 0 0 15px var(--accent-glow);
+  transform: translateY(-2px);
+}
+
+/* Stats Cards */
+.stat-card {
+  background-color: rgba(10, 15, 20, 0.8);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid var(--border-color);
+  padding: 1.5rem;
+  border-radius: 0.5rem;
+  text-align: center;
+  transition: all 0.3s ease;
+}
+
+.stat-card:hover {
+  border-color: var(--accent);
+  box-shadow: 0 0 15px var(--accent-glow);
+  transform: translateY(-2px);
+}
+
+/* Category Headers */
+.category-header {
+  background-color: var(--bg-secondary);
+  border: 1px solid var(--accent);
+  border-radius: 0.5rem;
+  padding: 1rem;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.category-title {
+  color: var(--accent);
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.category-description {
+  color: var(--text-secondary);
+  font-size: 0.875rem;
+}
+
+.category-count {
+  display: inline-block;
+  background-color: var(--accent);
+  color: var(--bg-primary);
+  padding: 0.25rem 0.5rem;
+  border-radius: 9999px;
+  font-size: 0.75rem;
+  font-weight: bold;
+  margin-left: 0.5rem;
+}
+
+/* Skill Cards */
+.skill-card {
+  background-color: rgba(10, 15, 20, 0.8);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid var(--border-color);
+  transition: transform 0.3s ease, box-shadow 0.3s ease,
+    border-color 0.3s ease;
+}
+
+.skill-card:hover {
+  transform: translateY(-5px) scale(1.02);
+  border-color: var(--accent);
+  box-shadow: 0 0 20px var(--accent-glow);
+}
+
+/* Rating Bars */
+.rating-bar-bg {
+  background-color: var(--border-color);
+}
+
+.rating-bar-fill {
+  background-color: var(--accent);
+  box-shadow: 0 0 10px var(--accent);
+  transition: width 1s ease-in-out;
+}
+
+/* Modal Styles */
+#skill-modal {
+  background-color: rgba(5, 8, 10, 0.8);
+  backdrop-filter: blur(15px);
+  -webkit-backdrop-filter: blur(15px);
+}
+
+#modal-content {
+  background-color: var(--bg-secondary);
+  border: 1px solid var(--accent);
+}
+
+/* Animations */
+.fade-in {
+  animation: fadeIn 0.3s ease-out forwards;
+}
+
+.fade-out {
+  animation: fadeOut 0.3s ease-in forwards;
+}
+
+.slide-up-in {
+  animation: slideUpIn 0.4s ease-out forwards;
+}
+
+.slide-down-out {
+  animation: slideDownOut 0.4s ease-in forwards;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+@keyframes slideUpIn {
+  from {
+    opacity: 0;
+    transform: translateY(30px) scale(0.98);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+@keyframes slideDownOut {
+  from {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+  to {
+    opacity: 0;
+    transform: translateY(30px) scale(0.98);
+  }
+}
+
+/* Profile Picture Pulse Animation */
+@keyframes profilePulse {
+  0% {
+    box-shadow: 0 0 15px var(--accent-glow), 0 0 30px var(--accent-glow);
+  }
+  50% {
+    box-shadow: 0 0 25px var(--accent-glow), 0 0 50px var(--accent-glow);
+  }
+  100% {
+    box-shadow: 0 0 15px var(--accent-glow), 0 0 30px var(--accent-glow);
+  }
+}
+
+#profile-picture {
+  animation: profilePulse 3s ease-in-out infinite;
+}
+
+/* Scrollbar Styles */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--bg-secondary);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--accent);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #00c4a8;
+}
+
+/* Responsive Design */
+@media (max-width: 640px) {
+  .action-btn {
+    width: 100%;
+    justify-content: center;
+  }
+  
+  .category-title {
+    font-size: 1.25rem;
+  }
+  
+  .stat-card {
+    padding: 1rem;
+  }
+}
+
+/* Loading States */
+.loading-shimmer {
+  background: linear-gradient(
+    90deg,
+    var(--border-color) 25%,
+    var(--accent-glow) 50%,
+    var(--border-color) 75%
+  );
+  background-size: 200% 100%;
+  animation: shimmer 2s infinite;
+}
+
+@keyframes shimmer {
+  0% {
+    background-position: -200% 0;
+  }
+  100% {
+    background-position: 200% 0;
+  }
+}
