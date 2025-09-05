@@ -1,0 +1,101 @@
+{
+  "name": "Rupam Ghosh",
+  "nickname": "hulo",
+  "title": "Cyber Security Enthusiast & Full-Stack Developer",
+  "location": "Durgapur, West Bengal, India",
+  "profilePicture": "https://via.placeholder.com/300x300/0a0f14/00f5d4?text=RG",
+  "about": "Passionate cybersecurity enthusiast with a strong foundation in full-stack development. I thrive on identifying vulnerabilities, securing systems, and building robust applications. My journey in tech spans across multiple domains - from ethical hacking and penetration testing to creating scalable web solutions. I believe in continuous learning and sharing knowledge with the community. When I'm not diving deep into security research or coding, you'll find me participating in CTF competitions or contributing to open-source projects.",
+  "cvUrl": "./assets/Rupam_Ghosh_CV.pdf",
+  "socialLinks": [
+    {
+      "platform": "github",
+      "url": "https://github.com/rupamghosh",
+      "username": "rupamghosh"
+    },
+    {
+      "platform": "linkedin", 
+      "url": "https://linkedin.com/in/rupamghosh",
+      "username": "rupamghosh"
+    },
+    {
+      "platform": "twitter",
+      "url": "https://twitter.com/rupamghosh",
+      "username": "@rupamghosh"
+    },
+    {
+      "platform": "email",
+      "url": "mailto:rupam@example.com",
+      "username": "rupam@example.com"
+    },
+    {
+      "platform": "phone",
+      "url": "tel:+91XXXXXXXXXX",
+      "username": "+91 XXXXX XXXXX"
+    },
+    {
+      "platform": "website",
+      "url": "https://rupamghosh.dev",
+      "username": "rupamghosh.dev"
+    }
+  ],
+  "skillCategories": [
+    {
+      "id": "cybersecurity",
+      "name": "🔐 Cybersecurity Skills",
+      "description": "Security research, ethical hacking, penetration testing, and digital forensics expertise"
+    },
+    {
+      "id": "programming",
+      "name": "💻 Programming & Development", 
+      "description": "Full-stack development, scripting, and software engineering capabilities"
+    },
+    {
+      "id": "systems",
+      "name": "🖥️ Systems & Infrastructure",
+      "description": "Operating systems, networking, and infrastructure management skills"
+    },
+    {
+      "id": "tools",
+      "name": "🔧 Tools & Technologies",
+      "description": "Development tools, version control, and productivity software proficiency"
+    },
+    {
+      "id": "soft-skills",
+      "name": "🧠 Soft Skills & Methodologies",
+      "description": "Communication, problem-solving, and project management abilities"
+    }
+  ],
+  "contact": {
+    "email": "rupam@example.com",
+    "phone": "+91XXXXXXXXXX",
+    "timezone": "IST (GMT+5:30)",
+    "availableForWork": true,
+    "preferredContactMethod": "email"
+  },
+  "experience": {
+    "totalYears": 4,
+    "startDate": "2020-09-01",
+    "currentRole": "Cybersecurity Researcher & Developer",
+    "workStatus": "Open to opportunities"
+  },
+  "interests": [
+    "Capture The Flag (CTF) competitions",
+    "Open source contributions", 
+    "Security research and blogging",
+    "Web application security",
+    "Network penetration testing",
+    "Malware analysis",
+    "Bug bounty hunting"
+  ],
+  "achievements": [
+    "Multiple CTF competition wins",
+    "Discovered vulnerabilities in open-source projects",
+    "Built and deployed several security tools",
+    "Active contributor to cybersecurity community"
+  ],
+  "certifications": [
+    "Ethical Hacker (CEH) - In Progress",
+    "CompTIA Security+ - Planned",
+    "OSCP - Long-term goal"
+  ]
+}
