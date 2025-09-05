@@ -2,45 +2,48 @@
   {
     "id": "python",
     "name": "Python",
+    "category": "Programming",
     "startDate": "2021-06-01",
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Python-logo-notext.svg/1200px-Python-logo-notext.svg.png",
-    "description": "My primary language for backend development, scripting, and cybersecurity tasks. Proficient in creating automation scripts, web scrapers, and network analysis tools.",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/c/c3/Python-logo-notext.svg",
+    "description": "Primary language for backend development, scripting, and cybersecurity tasks.",
     "projects": [
-      "Developed a port scanner with service detection.",
-      "Created a web scraping tool for threat intelligence gathering.",
-      "Built several REST APIs using Flask and FastAPI."
+      "Developed a port scanner with service detection",
+      "Created a web scraping tool for threat intelligence",
+      "Built REST APIs using Flask and FastAPI"
     ],
     "resources": [
-      { "name": "Official Python Docs", "url": "https://docs.python.org/3/" },
+      { "name": "Official Docs", "url": "https://docs.python.org/3/" },
       { "name": "Real Python", "url": "https://realpython.com/" }
     ]
   },
   {
     "id": "javascript",
     "name": "JavaScript",
+    "category": "Programming",
     "startDate": "2022-01-15",
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/JavaScript-logo.png/800px-JavaScript-logo.png",
-    "description": "Used extensively for frontend interactivity and dynamic web applications. Comfortable with modern ES6+ features, asynchronous operations, and DOM manipulation.",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/6/6a/JavaScript-logo.png",
+    "description": "Used for frontend interactivity and dynamic web apps. Comfortable with ES6+ features.",
     "projects": [
-      "Built this interactive portfolio website from scratch.",
-      "Developed the frontend for a real-time chat application.",
-      "Created several browser-based tools and games."
+      "Built this portfolio website",
+      "Developed frontend for a real-time chat app",
+      "Created browser-based tools and games"
     ],
     "resources": [
-        { "name": "MDN Web Docs", "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript" },
-        { "name": "JavaScript.info", "url": "https://javascript.info/" }
+      { "name": "MDN Web Docs", "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript" },
+      { "name": "JavaScript.info", "url": "https://javascript.info/" }
     ]
   },
   {
     "id": "cybersecurity",
     "name": "Cyber Security",
+    "category": "Security",
     "startDate": "2020-09-01",
-    "imageUrl": "",
-    "description": "A deep passion and the core of my focus. Experienced in network security principles, ethical hacking techniques, and vulnerability assessment. Constantly learning about new threats and defense mechanisms.",
+    "imageUrl": "https://cdn-icons-png.flaticon.com/512/3135/3135715.png",
+    "description": "Focus on ethical hacking, vulnerability assessment, and network defense.",
     "projects": [
-      "Participated in several Capture The Flag (CTF) competitions.",
-      "Conducted vulnerability scans on local networks.",
-      "Authored security reports and documentation for personal projects."
+      "Participated in Capture The Flag (CTF) competitions",
+      "Conducted vulnerability scans on local networks",
+      "Authored security reports for personal projects"
     ],
     "resources": [
       { "name": "Hack The Box", "url": "https://www.hackthebox.com/" },
@@ -50,44 +53,47 @@
   {
     "id": "networking",
     "name": "Networking",
+    "category": "Infrastructure",
     "startDate": "2021-02-10",
-    "imageUrl": "",
-    "description": "Solid understanding of TCP/IP, DNS, HTTP/S, and other core internet protocols. Capable of analyzing network traffic with tools like Wireshark and configuring basic network devices.",
+    "imageUrl": "https://cdn-icons-png.flaticon.com/512/906/906343.png",
+    "description": "Understanding of TCP/IP, DNS, HTTP/S, and network troubleshooting with Wireshark.",
     "projects": [
-      "Set up and managed a home lab network.",
-      "Analyzed packet captures to troubleshoot application issues.",
-      "Wrote scripts to automate network discovery."
+      "Set up and managed a home lab network",
+      "Analyzed packet captures to troubleshoot issues",
+      "Wrote scripts for network discovery"
     ],
     "resources": [
-      { "name": "Wireshark University", "url": "https://www.wireshark.org/docs/" }
+      { "name": "Wireshark Docs", "url": "https://www.wireshark.org/docs/" }
     ]
   },
   {
     "id": "linux",
     "name": "Linux",
+    "category": "Operating Systems",
     "startDate": "2020-11-20",
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/35/Tux.svg/1200px-Tux.svg.png",
-    "description": "My daily driver OS. Proficient with the command line, shell scripting (Bash), system administration, and managing services on Debian-based distributions.",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/3/35/Tux.svg",
+    "description": "Daily driver OS. Skilled in Bash scripting, system admin, and service management.",
     "projects": [
-      "Configured and hardened a personal web server.",
-      "Automated system backups and updates with cron jobs.",
-      "Customized my desktop environment (i3/Sway) for maximum productivity."
+      "Configured and hardened a personal web server",
+      "Automated system backups and updates with cron",
+      "Customized desktop environment for productivity"
     ],
     "resources": [
-      { "name": "The Linux Command Line (Book)", "url": "http://linuxcommand.org/tlcl.php" },
+      { "name": "Linux Command Line (Book)", "url": "http://linuxcommand.org/tlcl.php" },
       { "name": "ArchWiki", "url": "https://wiki.archlinux.org/" }
     ]
   },
   {
     "id": "git",
     "name": "Git & GitHub",
+    "category": "Tools",
     "startDate": "2021-07-01",
     "imageUrl": "https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png",
-    "description": "Experienced in version control using Git for all my projects. Comfortable with branching, merging, pull requests, and collaborating via GitHub.",
+    "description": "Version control for all projects. Comfortable with branching, merging, and CI/CD.",
     "projects": [
-      "Manage all personal projects, including this website, on GitHub.",
-      "Contributed to open-source projects.",
-      "Utilized GitHub Actions for basic CI/CD."
+      "Manage all personal projects on GitHub",
+      "Contributed to open-source repos",
+      "Used GitHub Actions for CI/CD"
     ],
     "resources": [
       { "name": "Pro Git (Book)", "url": "https://git-scm.com/book/en/v2" }
